@@ -115,8 +115,9 @@ public class Drawer extends SherlockFragment {
         });
 
         this.data = new ArrayList<Item>();
-        this.data.add(new Item("Profile"));
-        this.data.add(new Item("Messages"));
+        this.data.add(new Item(getString(R.string.action_home)));
+        this.data.add(new Item(getString(R.string.action_profile)));
+        this.data.add(new Item(getString(R.string.action_messages)));
 
         mAdapter = new Adapter(
                 getActionBar().getThemedContext(),

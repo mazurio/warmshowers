@@ -1,5 +1,6 @@
 <resources>
     <style name="AppTheme" parent="Theme.Sherlock.Light">
-        <!-- Customize your theme here. -->
+        <!-- Flat Action Bar -->
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>
