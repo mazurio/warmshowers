@@ -29,6 +29,7 @@
             android:layout_width="@dimen/navigation_drawer_width"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:layout_marginTop="72dp"
             android:name="io.mazur.warmshowers.Navigation.Drawer" />
     </android.support.v4.widget.DrawerLayout>
 </FrameLayout>

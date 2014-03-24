@@ -43,12 +43,13 @@ public class Adapter extends BaseAdapter {
         View view;
 
         if (convertView == null) {
-//            if(position == 0) {
-//                view = this.inflater.inflate(R.layout.main_drawer_profile, parent, false);
-//            } else {
-//                view = this.inflater.inflate(resource, parent, false);
-//            }
-            view = this.inflater.inflate(resource, parent, false);
+            if(position == 4) {
+                view = this.inflater.inflate(R.layout.main_drawer_bottom, parent, false);
+            } else if(position == 5) {
+                view = this.inflater.inflate(R.layout.main_drawer_last, parent, false);
+            } else {
+                view = this.inflater.inflate(resource, parent, false);
+            }
         } else {
             view = convertView;
         }
